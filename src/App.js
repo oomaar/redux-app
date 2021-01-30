@@ -8,6 +8,8 @@ function App() {
 
   return (
     <div className="app">
+      <h1>This is my fancy app</h1>
+      <h3>{user ? `User loggedin as ${user}` : "No user Logged in"}</h3>
       <Login setUser={setUser} />
     </div>
   );

@@ -1,15 +1,16 @@
 import React from 'react';
 
-function Login() {
+function Login({ setUser }) {
 
     const loginToApp = () => {
         // Do some Login stuff
+        setUser("Sanik");
     }
 
     return (
         <div>
             <h1>I am the login Component</h1>
-            <button>Login</button>
+            <button onClick={loginToApp}>Login</button>
         </div>
     )
 }
