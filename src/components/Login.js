@@ -1,10 +1,15 @@
 import React from 'react';
+import { useStateValue } from '../StateProvider';
 
 function Login({ setUser }) {
+    const [store, dispatch] = useStateValue();
 
     const loginToApp = () => {
         // Do some Login stuff
-        setUser("Sanik");
+        dispatch({
+            type: "SET_USER",
+            user: "Omaar_5",
+        })
     }
 
     return (
