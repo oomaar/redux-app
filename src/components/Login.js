@@ -1,15 +1,9 @@
 import React from 'react';
-import { useStateValue } from '../StateProvider';
 
-function Login({ setUser }) {
-    const [store, dispatch] = useStateValue();
+function Login() {
 
     const loginToApp = () => {
         // Do some Login stuff
-        dispatch({
-            type: "SET_USER",
-            user: "Omaar_5",
-        })
     }
 
     return (
@@ -20,4 +14,4 @@ function Login({ setUser }) {
     )
 }
 
-export default Login
+export default Login;
